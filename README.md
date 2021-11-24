@@ -1,2 +1,69 @@
 # proyectodesemestre
-#include &lt;iostream>  using namespace std;  int main()    {   int saldo=500,clave=273,contador=1,deposito,retiro,respuesta=0;    string usuario="Drake";   cout&lt;&lt;"escribe usuario:";   cin >>usuario;   cout&lt;&lt; "escribe clave:";   cin >> clave;   if(usuario=="Drake" and clave==273)  {   cout&lt;&lt; "bienvenido"&lt;&lt;"\n";   while(respuesta!=4)   {   cout &lt;&lt; "1:=consulta tu saldo"&lt;&lt;endl;   cout &lt;&lt; "2:=ingresar saldo"&lt;&lt;endl;    cout &lt;&lt; "3:=retirar saldo"&lt;&lt;endl;   cout &lt;&lt;"4:=salir"&lt;&lt;endl;   cin >> respuesta;             if (respuesta==1)          {          cout &lt;&lt;"tu saldo actual es:"&lt;&lt;saldo&lt;&lt;"\n";           }              if (respuesta==2)              {              cout &lt;&lt;  "ingresa cantidad a depositar"&lt;&lt;"\n";              cin>>deposito ;              saldo=saldo+deposito;              cout &lt;&lt; "tu saldo actual es:"&lt;&lt;saldo&lt;&lt;"\n";              }                                               if (respuesta==3)                     {                    cout &lt;&lt;  "ingresa cantidad a retirar"&lt;&lt;"\n";                    cin>>retiro ;                    if (retiro>saldo)                    {                    cout &lt;&lt; "tu saldo es insuficiente, prueba de nuevo con una cantidad menor"&lt;&lt;"\n";                    }                    else                    {                    saldo=saldo-retiro;                    cout &lt;&lt; "tu saldo actual es:"&lt;&lt;saldo&lt;&lt;"\n";                    }                    }                         } }    else  {       cout&lt;&lt; "denegado";  }           return 0; }
+#include <iostream> 
+using namespace std;
+
+int main() 
+  {
+  int saldo=500,clave=273,contador=1,deposito,retiro,respuesta=0;
+
+  string usuario="Drake";
+  cout<<"escribe usuario:";
+  cin >>usuario;
+  cout<< "escribe clave:";
+  cin >> clave;
+
+
+if(usuario=="Drake" and clave==273) 
+{
+  cout<< "bienvenido"<<"\n";
+  while(respuesta!=4)
+ 
+{
+  cout << "1:=consulta tu saldo"<<endl;
+  cout << "2:=ingresar saldo"<<endl; 
+  cout << "3:=retirar saldo"<<endl;
+  cout <<"4:=salir"<<endl;
+  cin >> respuesta;
+  
+         if (respuesta==1)
+         {
+         cout <<"tu saldo actual es:"<<saldo<<"\n"; 
+         }
+             if (respuesta==2)
+             {
+             cout <<  "ingresa cantidad a depositar"<<"\n";
+             cin>>deposito ;
+             saldo=saldo+deposito;
+             cout << "tu saldo actual es:"<<saldo<<"\n";
+             }
+                          
+                   if (respuesta==3) 
+                   {
+                   cout <<  "ingresa cantidad a retirar"<<"\n";
+                   cin>>retiro ;
+                   if (retiro>saldo)
+                   {
+                   cout << "tu saldo es insuficiente, prueba de nuevo con una cantidad menor"<<"\n";
+                   }
+                   else
+                   {
+                   saldo=saldo-retiro;
+                   cout << "tu saldo actual es:"<<saldo<<"\n";
+                   }
+                   }
+                        }
+}
+
+
+ else
+ {
+
+     cout<< "denegado";
+ }
+ 
+
+
+
+  
+  return 0;
+}
